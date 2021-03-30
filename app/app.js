@@ -77,3 +77,7 @@ handler(argv)
 })
 
 yargs.parse();
+//node app.js add  --title="mohan" --body="web developer"
+// node app.js list
+// node app.js read --title="mohan" 
+// node app.js remove --title="mohan"

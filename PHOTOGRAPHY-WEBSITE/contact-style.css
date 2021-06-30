@@ -1,0 +1,499 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html
+{
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size:20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    color: black;
+    background-color: white;
+
+}
+header
+{
+    background-color:white;
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+}
+.top-nav{
+  display:none;
+
+}
+
+.side-nav
+{
+    background-color:white;
+    width: 25%;
+    height:100vh;
+    float: left;
+    position: fixed;
+}
+
+.side-nav h1
+{
+  text-decoration: none;
+    padding: 14px;
+    margin-left: 40px;
+    margin-top: 50px;
+
+}
+.side-nav a
+{
+  text-decoration:none;
+}
+.menu
+{
+    margin: 25px;
+}
+.menu a
+{
+    color: black;
+    text-decoration: none;
+}
+.menu li
+{
+    list-style: none;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.ico
+{
+   margin-left: 45px;
+}
+.ico li
+{
+list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+ion-icon
+{
+    color: black;
+}
+.contact-section
+{
+  padding: 14px;
+  background-color:black;
+  height:100vh;
+}
+.contact-section h1
+{
+
+  text-transform: uppercase;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  font-size:300%;
+  color: white;
+
+}
+.detail
+{
+color: white;
+  position: absolute;
+  left:52%;
+  top:60%;
+  border-radius:2%;
+  padding:5px;
+}
+
+.d1
+{
+text-transform: capitalize;
+ font-size:100%;
+ text-align: center;
+ padding-bottom:15px;
+}
+.d2
+{
+ font-size: 120%;
+ text-align: center;
+  padding-bottom:35px;
+  font-weight: 600;
+}
+.rag
+{
+  width:180px;
+  height:180px;
+  position: absolute;
+  left:53%;
+  top:22%;
+  border-radius:50%;
+}
+.contact1-section
+{
+  display:none;
+}
+
+.contact2-section
+{
+  display: none;
+}
+@media only screen and (max-width:350px)
+{
+  .side-nav
+      {
+          display:none;
+      }
+  header
+{
+  background-color:white;
+  background-position: center;
+  background-size: cover;
+  height:100%;
+}
+
+.top-nav
+{
+display:inline-block;
+background-color:white;
+width: 100%;
+height:auto;
+position: fixed;
+}
+  .top-nav h1{
+  font-size:80%;
+    padding:2%;
+    text-decoration: none;
+  }
+  .top-nav a
+  {
+    position: absolute;
+    top:18%;
+    left:85%;
+    font-size:100%;
+  }
+  .contact-section,.contact2-section
+  {
+    display: none;
+  }
+
+      .contact1-section
+      {
+        display: block;
+        background-color:black;
+        height:100vh;
+      }
+
+      .contact1-section h1
+      {
+
+        text-transform: uppercase;
+        position: absolute;
+        top: 10%;
+        left:22%;
+        font-size:270%;
+        color: white;
+
+      }
+      .detail1
+      {
+      color: white;
+        position: absolute;
+        left:27%;
+        top:55%;
+        border-radius:2%;
+        padding:5px;
+      }
+
+      .d11
+      {
+      text-transform: capitalize;
+       font-size:100%;
+       text-align: center;
+       padding-bottom:15px;
+      }
+      .d21
+      {
+       font-size: 120%;
+       text-align: center;
+        padding-bottom:35px;
+        font-weight: 600;
+      }
+      .rag1
+      {
+        width:180px;
+        height:180px;
+        position: absolute;
+        left:30%;
+        top:25%;
+        border-radius:50%;
+      }
+
+}
+
+@media only screen and (max-width:450px)
+{
+
+    header
+{
+    background-color:white;
+    background-position: center;
+    background-size: cover;
+    height:100%;
+}
+
+.top-nav
+{
+  display:inline-block;
+  background-color:white;
+  width: 100%;
+  height:auto;
+  position: fixed;
+}
+
+.top-nav h1{
+  font-size:180%;
+  padding:2%;
+}
+.top-nav a
+{
+  position: absolute;
+  top:18%;
+  left:85%;
+  font-size:200%;
+}
+
+.side-nav
+    {
+        display: none;
+    }
+    .contact-section,.contact2-section
+    {
+      display: none;
+    }
+
+    .contact1-section
+    {
+      display:block;
+      background-color:black;
+      height:100vh;
+    }
+
+    .contact1-section h1
+    {
+
+      text-transform: uppercase;
+      position: absolute;
+      top: 10%;
+      left:22%;
+      font-size:270%;
+      color: white;
+
+    }
+    .detail1
+    {
+    color: white;
+      position: absolute;
+      left:27%;
+      top:55%;
+      border-radius:2%;
+      padding:5px;
+    }
+
+    .d11
+    {
+    text-transform: capitalize;
+     font-size:100%;
+     text-align: center;
+     padding-bottom:15px;
+    }
+    .d21
+    {
+     font-size: 120%;
+     text-align: center;
+      padding-bottom:35px;
+      font-weight: 600;
+    }
+    .rag1
+    {
+      width:180px;
+      height:180px;
+      position: absolute;
+      left:30%;
+      top:25%;
+      border-radius:50%;
+    }
+
+}
+
+@media only screen and (max-width:550px)
+{
+  .side-nav
+  {
+width:40%;
+  }
+
+  .side-nav h1
+  {
+    font-size: 85%;
+    margin-left:10%;
+  }
+  .menu li
+  {
+    font-size: 85%;
+      margin-left: 10%;
+  }
+  ion-icon
+  {
+    font-size:85%;
+  }
+  .menu
+  {
+      margin:10px;
+  }
+  .ico
+  {
+     margin-left: 10%;
+  }
+}
+@media only screen and (min-width:551px)
+{
+
+  .side-nav h1
+  {
+    font-size:75%;
+    margin-left:5%;
+  }
+  .contact-section
+  {
+    height: 150vh;
+  }
+  .contact-section h1{
+    top: 5%;
+    left:55%;
+    font-size:250%;
+  }
+  .detail
+  {
+    position: absolute;
+    left:58%;
+    top:80%;
+    border-radius:2%;
+    padding:5px;
+  }
+  .rag{
+    left:58%;
+    top:22%;
+
+  }
+}
+
+@media only screen and (min-width:630px)
+{
+
+  .side-nav
+  {
+
+      width:35%;
+  }
+  .side-nav h1
+  {
+    font-size: 90%;
+    margin-left:10%;
+  }
+  .menu li
+  {
+    font-size: 90%;
+      margin-left: 10%;
+  }
+  ion-icon
+  {
+    font-size:90%;
+  }
+  .menu
+  {
+      margin:10px;
+  }
+  .ico
+  {
+     margin-left: 10%;
+  }
+}
+
+@media only screen and (min-width:750px)
+{
+
+  .side-nav h1
+  {
+    font-size: 90%;
+  }
+  .menu li
+  {
+    font-size: 90%;
+  }
+  ion-icon
+  {
+    font-size:90%;
+  }
+  .contact-section
+  {
+    display: none;
+  }
+  .contact1-section
+  {
+    display: none;
+  }
+  .contact2-section
+  {
+    display:block;
+    background-color:black;
+    height:150vh;
+  }
+  .contact2-section h1
+  {
+
+    text-transform: uppercase;
+    position: absolute;
+    top: 10%;
+    left:45%;
+    font-size:270%;
+    color: white;
+
+  }
+  .detail2
+  {
+  color: white;
+    position: absolute;
+    left:48%;
+    top:110%;
+    border-radius:2%;
+    padding:5px;
+  }
+
+  .d12
+  {
+  text-transform: capitalize;
+   font-size:100%;
+   text-align: center;
+   padding-bottom:15px;
+  }
+  .d22
+  {
+   font-size: 120%;
+   text-align: center;
+    padding-bottom:35px;
+    font-weight: 600;
+  }
+  .rag2
+  {
+    width:180px;
+    height:180px;
+    position: absolute;
+    left:50%;
+    top:35%;
+    border-radius:50%;
+  }
+
+
+
+
+}

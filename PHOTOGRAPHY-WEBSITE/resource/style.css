@@ -1,0 +1,247 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html
+{
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size:20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    color: black;
+    background-color: white;
+
+}
+header
+{
+    background-color:white;
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+}
+.top-nav{
+  display:none;
+
+}
+
+.side-nav
+{
+    background-color:white;
+    width: 30%;
+    height:100vh;
+    float: left;
+    position: fixed;
+}
+.side-nav h1
+{
+    padding: 14px;
+    margin-left: 40px;
+    margin-top: 50px;
+
+}
+.menu
+{
+    margin: 25px;
+}
+.menu a
+{
+    color: black;
+    text-decoration: none;
+}
+.menu li
+{
+    list-style: none;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.ico
+{
+   margin-left: 45px;
+}
+.ico li
+{
+list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+ion-icon
+{
+    color: black;
+}
+.image-section
+{
+    width:100%;
+    white-space: nowrap;
+}
+.image-section img
+{
+    display: inline-block;
+    height:100vh;
+}
+@media only screen and (max-width:350px)
+{
+  .side-nav
+      {
+          display: none;
+      }
+  header
+{
+  background-color:white;
+  background-position: center;
+  background-size: cover;
+  height:100%;
+}
+
+.top-nav
+{
+display:inline-block;
+background-color:white;
+width: 100%;
+height:auto;
+position: fixed;
+}
+  .top-nav h1{
+  font-size:80%;
+    padding:2%;
+  }
+  .top-nav a
+  {
+    position: absolute;
+    top:18%;
+    left:85%;
+    font-size:100%;
+  }
+}
+
+@media only screen and (max-width:450px)
+{
+    header
+{
+    background-color:white;
+    background-position: center;
+    background-size: cover;
+    height:100%;
+}
+
+.top-nav
+{
+  display:inline-block;
+  background-color:white;
+  width: 100%;
+  height:auto;
+  position: fixed;
+}
+
+.top-nav h1{
+  font-size:180%;
+  padding:2%;
+}
+.top-nav a
+{
+  position: absolute;
+  top:18%;
+  left:85%;
+  font-size:200%;
+}
+
+.side-nav
+    {
+        display: none;
+    }
+
+.image-section
+{  white-space: nowrap;
+}
+.image-section img
+{
+    display: inline-block;
+    height:90vh;
+    margin-top:15%;
+    padding-right:2%;
+
+}
+
+}
+
+@media only screen and (max-width:550px)
+{
+  .side-nav
+  {
+
+      width:40%;
+  }
+
+  .side-nav h1
+  {
+    font-size: 85%;
+    margin-left:10%;
+  }
+  .menu li
+  {
+    font-size: 85%;
+      margin-left: 10%;
+  }
+  ion-icon
+  {
+    font-size:85%;
+  }
+  .menu
+  {
+      margin:10px;
+  }
+  .ico
+  {
+     margin-left: 10%;
+  }
+}
+@media only screen and (max-width:630px)
+{
+  .side-nav
+  {
+
+      width:40%;
+  }
+  .side-nav h1
+  {
+    font-size: 90%;
+    margin-left:10%;
+  }
+  .menu li
+  {
+    font-size: 90%;
+      margin-left: 10%;
+  }
+  ion-icon
+  {
+    font-size:90%;
+  }
+  .menu
+  {
+      margin:10px;
+  }
+  .ico
+  {
+     margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width:850px)
+{
+
+  .side-nav h1
+  {
+    font-size: 90%;
+  }
+  .menu li
+  {
+    font-size: 90%;
+  }
+  ion-icon
+  {
+    font-size:90%;
+  }
+}

@@ -1,0 +1,696 @@
+/*bgcolor:rgba(149, 163, 184, 0.44); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    
+}
+@font-face {
+    font-family: 'Dancing Script';
+    src: url(DancingScript-VariableFont_wght.ttf);
+  }
+html
+{  font-family: 'Dancing Script';
+    /* font-family: 'roboto',sans-serif; */
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    color:rgba(78, 74, 74, 0.73); 
+    
+}
+/*---------------------------------- HEADER SECTION ------------------------------------ */
+header
+{
+    background: linear-gradient(45deg,rgba(149, 163, 184, 0.44),#aff6cf,#94c997);
+     /* background-color: rgba(149, 163, 184, 0.44);  */
+  /*  background-color: black; new */
+    height: 100vh;
+     /* color: white;  new */
+     animation: change 5s ease-in-out infinite;
+     background-size: 400% 400%;
+}
+
+h1
+{
+   text-transform:capitalize;
+  word-spacing: 3px;
+    letter-spacing: 1px;
+    
+}
+.hero-text-dox
+{
+    position: absolute;
+    top:25%;
+    left:2%;
+    font-size: 25px;
+}
+.btn1
+{
+    position: absolute;
+    top:55%;
+    left:4%;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+     /* new background-color: black; */
+      /* new box-shadow:0px 0px 5px;  */ 
+    background-color:#3C567E; 
+    text-transform: capitalize;
+    border-radius: 5px;
+    animation: button 5s ease-in-out infinite;
+   
+}
+@keyframes button{
+    0%{
+        background-color:#3C567E;
+    }
+    25%
+    {
+        background-color:#0b121b;
+    }
+    50%
+    {
+        background-color:#a1a4aa;
+    }
+    75%{   background-color:#ffffff;
+    color: black;}
+    100%{
+        background-color:#000000;
+    }
+}
+.btn1:hover
+{
+   background-color:#253855;   
+    /* new box-shadow: 0px 0px 8px;*/
+}
+header img
+{
+    position: absolute;
+    width:590px;
+    height:650px;
+    /* new height:575px; */
+    top: 7px;
+    left: 50%;
+    border-radius: 5px;
+}
+.ico1
+{
+    position: absolute;
+    bottom:10%;
+    left: 2%;
+    
+}
+.ico1 li
+{
+ list-style: none;
+ display: inline;
+ padding-right: 35px; 
+    
+}
+.ico1 a:link,
+.ico1 a:visited
+{
+    color:#253855;
+     /* new color: white; */
+}
+
+ion-icon
+{
+    font-size: 40px;
+    
+}
+
+.ico1 a:hover
+{
+  color:#496286;  
+   /* new color:rgb(194, 189, 189); */
+
+    
+}
+
+
+/*---------------------------------- SKILLS AND INTEREST SECTION ------------------------------------ */
+ h2
+{
+    padding: 20px;
+    color:#3C567E;
+/* new  color: black; */
+    text-transform: uppercase;
+}
+.skill-section
+{
+    background-color:white;
+    padding-top: 20px;
+    /* new color: black; */
+}
+.skills
+{
+    float: left;
+    width: 50%;
+    height: 80vh;
+    padding-top: 100px;
+   background-color:white;
+}
+
+.skills ul 
+{  
+    margin: 20px 50px;
+    padding: 25px;
+}
+.skills ul li
+{  
+    
+    padding:10px;
+    list-style: none;
+    font-size: 25px;
+    /* color:rgba(78, 74, 74, 0.73); */
+    font-weight: 300;
+    
+}
+.skills ul li::first-letter
+{
+    text-transform: uppercase;
+}
+.interest
+{
+    float: left;
+    width: 50%;
+    height: 80vh;
+    padding-top: 100px;
+    background-color:white;
+}
+
+.interest ul 
+{  
+    margin: 20px 50px;
+    padding: 25px;
+}
+.interest ul li
+{  
+    
+    padding:10px;
+    list-style: none;
+    font-size: 25px;
+    /* color:rgba(78, 74, 74, 0.73); */
+     font-weight: 300;
+    
+}
+.interest ul li::first-letter
+{
+    text-transform: uppercase;
+}
+
+
+/*---------------------------------- EDUCATION SECTION ------------------------------------ */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.education-section {
+ background-color:  rgba(149, 163, 184, 0.44);
+ /* background-color: black;new */
+padding-top:100px;
+    height: 50vh;
+     color:rgba(78, 74, 74, 0.73);
+   /*  color: white; new */
+  
+}
+.education-section h2
+{
+    width: 50%;
+    float: left;
+}
+.education-section ul
+{
+    width: 50%;
+    float: right;
+    padding-top:20px;
+}
+.education-section li
+{
+list-style: none;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    
+}
+.education-section p
+{
+    font-size: 25px;
+    text-transform: capitalize;
+    color: black;
+}
+/* new.education-section h2
+{
+    color: white; new 
+}
+ */
+/*---------------------------------- PERSONAL INFORMATION SECTION ------------------------------------ */
+.personal-section
+{
+    padding-bottom: 100px;
+}
+
+.personal-section h2
+{
+width:100%;
+    
+padding-top:100px;
+padding-left:20px;
+padding-bottom: 50px;
+float:left;
+    
+}
+.personal-section div
+{
+    width: 40%;
+}
+.personal-section img
+{
+    width:400px;
+    padding-left: 5%;
+    padding-top:50px;
+    /* new filter: grayscale(100%); */
+    }
+.personal-section ul
+{
+    padding-top:100px;
+    width: 50%;
+    float: right;
+ 
+    }
+.personal-section li
+{
+   list-style: none;
+    color:rgba(78, 74, 74, 0.73);
+    /* new color: black; */
+    padding-left: 50px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 25px;
+    word-spacing: 1px;
+    letter-spacing:.5px;
+    
+}
+
+
+
+/*---------------------------------- WORK SECTION ------------------------------------ */
+
+.work-section
+{
+    width: 100%;
+    height:auto;
+    background-color:rgba(149, 163, 184, 0.44); 
+    /* new background-color: black; */
+   /* new  color: white; */
+    padding: 50px 0px;
+}
+/* new .work-section h2
+{
+ new  color: white;
+}  */
+.work-section img
+{
+   max-width: 400px;
+    height: auto;
+    margin-left: 15px;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.47); 
+       /* new filter: grayscale(100%); */
+
+    border-radius: 3px;
+    
+}
+.work-section img:hover
+{ /* new box-shadow: 0px 0px 10px white; */
+    border: 1px solid rgba(0, 0, 0, 0.53);
+}
+/*---------------------------------- HOBBY SECTION ------------------------------------ */
+
+.hobby
+{
+    padding-top: 70px;
+    
+    
+    
+}
+.hobby ul
+{
+    width: 30%;
+    padding: 80px 50px 50px 50px;
+    float: left;
+  
+    
+}
+.hobby li
+{
+    list-style: none;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+.hobby a
+{
+  color: black;
+    text-decoration: none;
+}
+
+
+
+.gallery img
+{
+    width:220px;
+    height:300px;
+    margin-right: 10px;
+    border-radius: 5px;
+     box-shadow:0px 0px 5px rgba(0, 0, 0, 0.47); 
+        /* new filter: grayscale(100%); */
+
+    
+}
+.hobby p
+{
+    margin-top:100px;
+    padding: 30px;
+    width: 100%;
+    margin-top: 30px;
+   
+}
+/* ------------------------ quote section ----------------------------------- */
+.quote
+{
+background-color:rgb(72, 86, 123); 
+/* new  background-color: black; */
+ color:white;
+text-transform: capitalize;
+padding:120px 50px;
+font-size:32px ;
+text-align: justify;
+
+}
+
+
+
+/* ------------------------ quote section ----------------------------------- */
+
+/* footer
+{
+    margin-bottom: 160px;
+} */
+
+footer p
+{
+    font-size:50px;
+    color:rgb(72, 86, 123);
+     /* new color: black; */
+    padding-left:20px;
+    text-transform: capitalize;
+    padding-top:50px;
+    
+}
+footer .row
+{
+    display: flex;
+}
+ p.cc
+{
+  font-size: 30;
+    
+}
+footer .row div{
+    width: 50%;
+    padding: 15px;
+}
+
+.row li{
+
+    font-size: 23;
+    padding-bottom:10px;
+    padding-top: 15px;
+    padding-left: 10px;
+    list-style: none;
+}
+footer a
+{
+     color:#253855; 
+     /* new color: black; */
+    padding:10px;
+} 
+
+/*
+footer ul
+{
+    width: 20%;
+    float: left;
+    margin-left: 300px;
+}
+footer li
+{
+    list-style: none;
+    padding-bottom:10px;
+    padding-top: 15px;
+    padding-left: 10px;
+    display: inline-block;
+    font-size: 23;
+   
+}
+footer a:link,
+footer a:visited
+{
+    color:#253855;
+} */
+
+
+/* animation */
+@keyframes change
+{
+0%{background-position: 0 50%;}
+50%{background-position: 100% 50%;}
+100%{background-position: 0 50%;}
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    header
+{
+    background-color: rgba(149, 163, 184, 0.44);
+    /* new background-color: black; */
+    height:150vh;
+    
+}
+ .hero-text-dox
+{
+    position: absolute;
+    top:15%;
+    left:8%;
+    font-size:18px;
+   
+}
+ .btn1
+{
+    position: absolute;
+    top:130%;
+    left:33%;
+    
+}
+.ico1
+{
+    position: absolute;
+    top:115%;
+    left:28%;
+    
+}
+    
+ header img
+{
+    margin-top: 25px; 
+    position: absolute;
+    width: 80%;
+  /* new width:90%;*/
+    height: 60%;
+    top:38%;
+    left:10%;
+    border-radius: 5px;
+}
+    h2
+{
+    padding: 20px;
+    color:#3C567E;
+    /* new color: black; */
+    text-transform: uppercase;
+}
+.skill-section
+{
+    padding-top:0px;
+    
+}
+.skills
+{
+    float: left;
+    width:100%;
+    height:60vh;
+    padding-top: 50px;
+     margin-bottom: 50px;
+   
+}
+
+.skills ul 
+{  
+    margin: 0px 50px;
+   
+    padding: 25px;
+}
+
+.interest
+{
+    width: 100%;
+    height: 50vh;
+    padding-top: 0px;
+}
+
+
+.interest ul 
+{  
+    margin: 20px 50px;
+    padding: 20px 25px;
+}
+.interest ul li
+{  
+    
+    padding:10p;
+    font-size: 25px;
+    
+}
+
+.education-section {
+    margin-top: 25px;
+padding-top:50px;
+    height: 50vh;
+    
+}
+.education-section h2
+{
+    width: 100%;
+    float:none;
+}
+.education-section ul
+{
+    width: 100%;
+    float:none;
+    padding-top:30px;
+    padding-left:55px;
+}
+    .personal-section
+{
+    padding-bottom: 50px;
+}
+
+.personal-section h2
+{
+width:100%;   
+padding-top:60px;
+padding-left:20px;
+padding-bottom: 30px;
+}
+.personal-section div
+{
+    width: 100%;
+}
+.personal-section img
+{
+   
+    width:350px;
+    padding-left: 3%;
+    padding-top:50px;
+    margin-left: 15px;
+    
+    }
+.personal-section ul
+{
+    padding-top:50px;
+    padding-left: 25px;
+    width: 100%;
+    padding-bottom:25px;
+    }
+.personal-section li
+{
+   list-style: none;
+    color:rgba(78, 74, 74, 0.73);
+    padding-left: 50px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 25px;
+    word-spacing: 0px;
+    letter-spacing:.2px;
+    
+}
+    .work-section
+{
+    width: 100%;
+    height:auto;
+    padding: 50px 10px 100px 10px;
+    
+}
+.work-section img
+{
+   max-width: 300px;
+    margin-left: 25px;
+    margin-top: 30px;    
+}
+    
+    .hobby
+{
+    padding-top: 50px;
+    
+    
+    
+}
+    .hobby ul
+{
+    width: 100%;
+    padding: 50px 50px 50px 50px;
+    float:none;
+    
+}
+.hobby li
+{
+    padding-bottom: 10px;
+    }
+
+.gallery
+{
+     display: none;
+    
+}
+
+.hobby p
+{
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding: 10 30px;
+    width: 100%;
+    }
+    
+    /* footer
+{
+    display: none;
+
+} */
+footer .row
+{
+    display:block;
+}
+footer .row div{
+    width: 100%;
+}
+
+
+}

@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    padding: 15px;
+}
+.content{
+    background-color: rgb(136, 181, 240);
+    height: 100vh;
+
+}
+button{
+   background-color: white;
+   padding: 5px 10px;
+   font-size: 20px;
+   border: 1px solid white;
+   border-radius: 5px;
+   margin-left: 45%;
+   
+}

@@ -1,0 +1,19 @@
+<div class="content">
+<h1>Logging Test</h1>
+<form [formGroup]="profile" (ngSubmit)="onSubmit()">
+<div style="width:50%;height: 500px;margin: auto;border-radius: 15px;">
+  <div style="display: flex;flex-direction: column;padding: 15px;">
+    <label style="padding: 5px;"><strong>Name</strong></label>
+    <input type="text" formControlName="name" style="border-radius: 10px;border:none;background-color: white;padding: 15px; ">
+  </div>
+  <div style="display: flex;flex-direction: column;padding: 15px;">
+    <label style="padding: 5px;"><strong>Age</strong></label>
+    <input type="text" formControlName="age" style="border-radius: 10px;border: none;background-color: white;padding: 15px; ">
+  </div>
+
+  <button type="submit">Save</button>
+  <button (click)="throwError()"  style="margin: 15px;">Throw Error</button>
+</div>
+</form>
+
+</div>

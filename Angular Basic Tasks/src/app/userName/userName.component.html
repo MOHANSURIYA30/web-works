@@ -1,0 +1,17 @@
+<div class="main">
+    <div class="card">
+      <!-- <form [formGroup]="loginForm" (ngSubmit)="onSubmit()"> -->
+      <h2>Type Your Name </h2>
+      <div class="group"><div class="container">
+        <label for="name">NAME</label>
+        <input id="name"  [formControl]="name"  type="text">
+        <!-- formControlName="name" -->
+      </div>
+     
+      </div>
+   <div style="display: flex;"> <button type="submit" (click)="onSubmit()">Submit Through Param</button>
+    <button  (click)="onSend()">Submit through Component</button></div>
+    <!-- </form> -->
+    </div>
+    </div>
+  

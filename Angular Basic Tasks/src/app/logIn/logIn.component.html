@@ -1,0 +1,48 @@
+<div class="main">
+  <div>
+  <ul class="nav"><li> <p class="parent" routerLink='username'> UserName Component</p></li>
+    <li> <p class="parent" routerLink='parent'> Parent Component</p></li>
+    <li> <p class="parent" routerLink='checkBox'> CheckBox Component</p></li>
+    <li> <p class="parent" routerLink='crud'> CRUD Component</p></li>
+
+  </ul>
+   </div>
+  <div class="card">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <h2>WELCOME!</h2>
+    <ul *ngIf="authService.user$ | async as user">
+      <li>{{ user.name }}</li>
+      <li>{{ user.email }}</li>
+    </ul>
+    <div class="group"><div class="container">
+      <label for="name">NAME</label>
+      <input id="name" formControlName="name" type="text">
+    </div>
+    <p *ngIf="nameStatus;else elseBlock"></p>
+    <ng-template #elseBlock>
+    <span class="warning">  Name Is Required</span>
+    </ng-template>
+    <p  *ngIf="noUser == true" class="warning">No User Found</p>
+    </div>
+    <div class="group">
+    <div class="container">
+      <label for="password">PASSWORD</label>
+      <input id="password"  formControlName="password" type="password">
+    </div>
+    <p *ngIf="passStatus;else elseBlock1"></p>
+    <ng-template #elseBlock1>
+    <span class="warning">  Password Is Required</span>
+    </ng-template>
+    </div>
+  <button type="submit">LOGIN</button>
+  <div class="sign" routerLink='signup'>signup</div>
+  </form>
+   <div>
+ 
+  </div>
+  <div class="auth">
+  <button *ngIf="(authService.isAuthenticated$ | async) === false" (click)="authService.loginWithRedirect()">LOGIN WITH AUTH0</button>
+  <button  style="background-color: red;" (click)="authService.logout({ returnTo: 'http://localhost:4200' })">LOGOUT</button>
+    <!-- <button style="background-color: red;" (click)="authService.logout({ returnTo: document.location.origin })">LOGOUT</button> -->
+  </div>
+  </div>

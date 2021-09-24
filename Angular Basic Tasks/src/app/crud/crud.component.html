@@ -1,0 +1,30 @@
+<!-- <h1 (click)="onSend()">Hello crud</h1> -->
+<div class="main">
+<div class="card">
+    <!-- <form [formGroup]="detailForm"> -->
+        <form [formGroup]="detailForm" (ngSubmit) = "onSubmit()">
+
+    <h1>CRUD Operations</h1>
+    <div class="row">
+    <div class="group">
+        <label>Name</label>
+        <input type="text" formControlName="name">
+    </div>
+    <div class="group">
+        <label>Age</label>
+        <input type="text" formControlName="age">
+    </div>
+    <div>
+    <div style="visibility: hidden;">--</div>
+    <button type="submit">Create</button>
+    </div>
+    </div>
+</form>
+</div>
+
+<div class="card"> 
+    <div class="box" *ngFor="let detail of details"><div>{{detail.name}}</div> <div>{{detail.age}}</div><button (click)="onEdit(detail.id)">Edit</button> <button style="background-color: red;" (click)="onDelete(detail.id)">Delete</button></div>
+</div>
+
+
+</div>

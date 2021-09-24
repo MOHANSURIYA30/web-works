@@ -1,0 +1,13 @@
+<div class="main" style="display: flex;">
+   <div class="container" style="height:fit-content;"> 
+       <h1>parent component</h1>
+       <h4>Datas from child:</h4>
+       <div *ngFor="let data of datas">{{data}}</div>
+    </div>
+
+<child-comp 
+[names]="names" 
+(transfer)='onLogin($event)'
+></child-comp>
+
+</div>

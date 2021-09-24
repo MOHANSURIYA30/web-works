@@ -1,0 +1,14 @@
+*{
+    background-color: rgb(97, 186, 238);
+    height: 100vh;
+}
+div{
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 50px;
+letter-spacing: 3px;
+text-transform: capitalize;
+
+}

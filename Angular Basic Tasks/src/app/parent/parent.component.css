@@ -1,0 +1,19 @@
+.main{
+    background-color: rgb(97, 186, 238);
+    height:100vh;
+    text-transform: capitalize;
+}
+h1{
+    margin-bottom: 20px;
+}
+.container{
+    margin: 15px;
+    background-color: white;
+    padding:30px;
+    border-radius: 10px;
+
+}
+.container div{
+    padding: 2px 20px;
+    }
+    

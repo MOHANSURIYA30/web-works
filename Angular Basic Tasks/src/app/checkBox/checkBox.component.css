@@ -1,0 +1,33 @@
+.main{
+    height: 100vh;
+    background-color: rgb(97, 186, 238);
+ }
+ .card{
+     width: 40%;
+     padding: 30px;
+     background-color: white;
+     position: absolute;
+     left: 30%;
+     top: 20%;
+     box-shadow:5px 5px 20px rgba(128, 128, 128, 0.692)  ;
+     border-radius: 20px;
+     
+ }
+ h2{
+     text-align: center;
+     padding: 20px;
+     letter-spacing: 2px;
+ }
+ 
+label{
+    padding: 10px;
+}
+.check{
+    margin-bottom: 10px;
+}
+
+ 
+ 
+
+ 
+ 

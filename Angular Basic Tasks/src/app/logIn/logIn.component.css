@@ -1,0 +1,111 @@
+.main{
+    height: 100vh;
+    background-color: rgb(97, 186, 238);
+ }
+ .card{
+     width: 40%;
+     padding: 30px;
+     background-color: white;
+     position: absolute;
+     left: 30%;
+     top: 20%;
+     box-shadow:5px 5px 20px rgba(128, 128, 128, 0.692)  ;
+     border-radius: 20px;
+     
+ }
+ h2{
+     text-align: center;
+     padding: 20px;
+     letter-spacing: 2px;
+ }
+ 
+ input{
+      padding: 15px;
+      background-color: rgba(167, 165, 165, 0.212);
+      border: none;
+      border-radius: 10px;
+ }
+ 
+ .container{
+     display: flex;
+     flex-direction: column;
+     padding-bottom:5px;
+ }
+ 
+ .container label{
+     padding-bottom: 10px;
+ }
+ .group{
+     margin-bottom: 15px;
+ }
+ form button{
+   border: none;
+   background-color: rgb(97, 186, 238);
+   padding: 10px 20px 10px 20px;
+   border-radius: 7px;
+   color: white;
+   font-weight: 500; 
+   font-size: 15px;
+   letter-spacing: 2px;
+   margin-left: 41%;
+   margin-top: 20px;
+   transition: 0.2s;
+ 
+ }
+ button:hover{
+     transform: scale(1.1);
+ 
+ }
+ .sign{
+   text-align: center;
+   padding: 5px;
+   text-decoration:underline;
+ }
+ 
+ input:focus{
+     outline: none;
+ }
+
+ .warning{
+     color: red;
+     font-size: 15px;
+ }
+ 
+ .parent{
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    transition: 0.2s;
+
+ }
+ .parent:hover{
+     transform: scale(1.05);
+ }
+
+ .nav{
+     display: flex;
+     list-style: none;
+
+ }
+ .nav li{
+     padding: 10px;
+ }
+
+ .auth{
+     display: flex;
+     justify-content:space-between;
+     margin-top: 25px;
+ }
+ .auth button{
+    border: none;
+    background-color: rgb(97, 186, 238);
+    padding: 10px 20px 10px 20px;
+    border-radius: 7px;
+    color: white;
+    font-weight: 500; 
+    font-size: 15px;
+    letter-spacing: 2px;
+
+ }
+ 
+ 

@@ -1,0 +1,30 @@
+<div class="main">
+   
+    <div class="card">
+      <form [formGroup]="checkForm">
+      <h2>Select CheckBox</h2>
+  
+     <div>
+         <div class="check">
+             <input name="all" formControlName="selectAll" (change)="onCheck()" type="checkbox"><label for="all">Select All</label>
+         </div>
+         <div class="check">
+            <input name="employed" formControlName="employed" (change)="onChange()" type="checkbox"><label for="employed">Employed</label>
+        </div>
+        <div class="check">
+            <input name="married" formControlName="married"  (change)="onChange()" type="checkbox"><label for="married">Married</label>
+        </div>
+        <div class="check">
+            <input name="educated" formControlName="educated" (change)="onChange()" type="checkbox"><label for="educated">Educated</label>
+        </div>
+        <div class="check">
+            <input name="nri" formControlName="nri" (change)="onChange()" type="checkbox"><label for="nri">NRI</label>
+        </div>
+     </div>
+    
+    </form>
+     <div>
+   
+    </div>
+    </div>
+  

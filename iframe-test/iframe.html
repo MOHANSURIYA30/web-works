@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="css/iframe.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        </head>
+       
+    <body>
+        <h1>HEADING CONTENT 1 </h1>
+<div style="display: flex;">
+    <div class="container">
+        <label>First Name</label>
+        <input type="text">
+       </div>
+       <div class="container">
+        <label>Middle Name</label>
+        <input type="text">
+       </div> 
+       <div class="container">
+        <label>Last Name</label>
+        <input type="text">
+       </div> 
+    </div>
+    <h3 class="parent-href"></h3>
+    <img class="parent-image" width="200px" src="">
+    <script>
+        // PARENT HREF ADDED TO IFRAME HEADER TAG
+        // console.log(window.parent.location.href);
+        let parent1 = document.querySelector('.parent-href');
+        // console.log(parent);
+        parent1.innerHTML = window.parent.location.href;
+
+        // IMAGE FROM PARENT ELEMENT AND ADD TO IFRAME DOM
+       console.log(parent.document.querySelector(".image1").src);
+       var parent_image = parent.document.querySelector(".image1").src;
+       document.querySelector('.parent-image ').src = parent_image;
+    </script>
+</body>    
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+       <title>iframe2</title>
+    
+    </head>
+    <body>
+<h5>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim dictum, ullamcorper ex non, varius nisl. Suspendisse hendrerit eget enim eu finibus. Vestibulum at luctus sem, vel placerat felis. Nullam lacus orci, hendrerit feugiat tincidunt id, efficitur quis sapien. Etiam porta arcu ac porttitor fringilla. Donec id urna iaculis, feugiat eros quis, mattis ipsum. Duis convallis pharetra lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec porttitor dolor in dignissim aliquet. Vestibulum at dui facilisis, ultrices odio et, rutrum ante.
+
+Suspendisse maximus dictum placerat. Suspendisse ac neque dolor. Vestibulum ultricies purus ut dolor commodo, at ornare nibh interdum. Mauris quis mi mauris. Aenean fringilla ex et semper vulputate. Vestibulum tempor, turpis sit amet porta eleifend, nunc metus elementum mi, non finibus lectus est nec tortor. Integer rhoncus enim magna, at molestie lorem accumsan vel. Duis et augue metus.
+
+Sed fringilla laoreet efficitur. Nam eget velit ante. Fusce in mi pellentesque, porta purus sed, ultricies nulla. Sed dapibus nisl sed sapien elementum, a sodales neque mollis. Phasellus scelerisque massa at erat dapibus consectetur. Nam eget ex auctor, aliquam tortor nec, molestie lacus. Aliquam et leo eu justo dignissim sodales. Nam ultrices tristique finibus. Praesent ut tincidunt tortor, vel porttitor neque. Sed ac nibh non nibh posuere sollicitudin. Nulla porttitor, erat id blandit rhoncus, felis mi posuere lacus, bibendum auctor orci tortor vitae lorem. Pellentesque mollis ut massa ut blandit. Donec ut vestibulum massa. Vestibulum facilisis blandit purus. Vivamus felis mauris, interdum quis dui sed, euismod interdum nisi.
+</h5>
+
+<h3 class="parent"></h3>
+<script>
+      console.log(window.parent.location);
+    console.log(window.parent.location.href);
+    let parent = document.querySelector('.parent');
+    console.log(parent);
+    parent.innerHTML = window.parent.location.href;
+
+</script>
+</body>
+
+</html>

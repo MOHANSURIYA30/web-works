@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>IFRAME TESTING</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+     
+    </head>
+    <body>
+        <h1>HEADING CONTENT</h1>
+        <img width="250px" class="image1" src="https://miro.medium.com/max/3840/1*BqyWtlAmAtk9JRO8b0uyNw.png">
+        <div>
+            <!-- <iframe name="iframe_a" class="test"  src="https://mohansuriya30.github.io/iframe-test/iframe.html"></iframe> -->
+            <iframe name="iframe_a" class="test"  src="http://127.0.0.1:5500/iframe.html"></iframe>
+         </div> 
+<div>
+    <!-- <a class="otherpage" href="https://mohansuriya30.github.io/iframe-test/iframe2.html" target="iframe_a"> -->
+        <a class="otherpage" href="http://127.0.0.1:5500/iframe2.html" target="iframe_a">
+        <button onclick="nameFunc()">other page</button></a></div>
+         <div class="iframe-content"></div>
+         <script>
+            function init()
+            {
+               let iframe= document.querySelector(".test");
+            //    console.log(iframe.src);
+               let val = document.querySelector('.iframe-content');
+               val.innerHTML = iframe.src;
+               
+            //    console.log(window.parent.location);
+            }
+            init()
+
+            function nameFunc()
+            {
+                let iframe= document.querySelector(".otherpage");
+            //    console.log(iframe.href);
+               let val = document.querySelector('.iframe-content');
+               val.innerHTML = iframe.href;
+            //    console.log(window.location);
+            }
+
+
+   </script>   
+    </body>
+
+</html>   
+
+
+<!-- https://mohansuriya30.github.io/ -->
